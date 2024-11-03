@@ -759,8 +759,13 @@
         <div class="firework" id="firework"></div>
     </div>
 
-    <audio id="correct-sound" src="correct-156911.mp3"></audio>
-    <audio id="incorrect-sound" src="wrong-buzzer-6268.mp3"></audio>
+    <!-- Audio elements -->
+    <audio id="correct-sound" preload="auto">
+        <source src="correct-156911.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="incorrect-sound" preload="auto">
+        <source src="wrong-buzzer-6268.mp3" type="audio/mpeg">
+    </audio>
 
     <script>
         const questions = [
